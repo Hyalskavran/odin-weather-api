@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+section {
+  display: grid;
+  margin: 1rem;
+  gap: 1rem;
+
+  & .current-info,
+    .future-info {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  & .current-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & .future-info {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+a {
+  margin: 2rem;
+}
